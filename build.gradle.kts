@@ -18,11 +18,7 @@ tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
+
 
 tasks.named<Jar>("jar") {
     manifest {
